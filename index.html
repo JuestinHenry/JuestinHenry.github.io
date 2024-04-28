@@ -1,127 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>中央民族大学 - 可持续快时尚</title>
-        <style>
-            /* 添加一些基本的样式 */
-            body {
-                font-family: "Montserrat", sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            nav a {
-                color: #fff;
-                text-decoration: none;
-                padding: 10px 20px;
-                font-weight: 600;
-                font-size: 16px;
-                transition: background-color 0.3s ease;
-            }
-            nav a:hover {
-                background-color: #555;
-            }
-            .content {
-                padding: 40px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .fashion-designs {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 40px;
-            }
-            .fashion-designs img {
-                width: 300px;
-                height: 450px;
-                margin: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
-            .fashion-designs img:hover {
-                transform: translateY(-5px);
-            }
-            .join-us {
-                margin-top: 40px;
-                text-align: center;
-            }
-            .join-us a {
-                color: #333;
-                text-decoration: none;
-                padding: 10px 20px;
-                background-color: #fff;
-                border-radius: 5px;
-                font-weight: 600;
-                font-size: 16px;
-                transition: background-color 0.3s ease;
-            }
-            .join-us a:hover {
-                background-color: #555;
-                color: #fff;
-            }
-        </style>
-        <link
-            href="https://fonts.cat.net/css?family=Noto+Sans+SC:400,600&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <header>
-            <div>
-                <a href="#">中央民族大学</a>
-                <a href="#">可持续快时尚</a>
-            </div>
-            <nav>
-                <a href="#">首页</a>
-                <a href="#" onclick="showIndustryNews()">业内资讯</a>
-                <a href="#" onclick="showJoinUs()">加入我们</a>
-            </nav>
-        </header>
-        <div class="content">
-            <div class="fashion-designs">
-                <!-- 在这里添加各种衣服图案设计 -->
-                <img src="Images/a1.png" alt="Design 1" />
-                <img src="Images/design2.jpg" alt="Design 2" />
-                <img src="Images/design3.jpg" alt="Design 3" />
-                <!-- 添加更多的设计图 -->
-            </div>
-            <div class="join-us">
-                <a href="#" onclick="showTeamIntroduction()">团队介绍</a>
-                <a href="#" onclick="showContact()">联系方式</a>
-            </div>
-        </div>
+<html lang="zh-CN">
 
-        <script>
-            function showIndustryNews() {
-                alert("用户体验\n用户设计");
-            }
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-            function showJoinUs() {
-                alert("团队介绍\n联系方式");
-                // 跳转到相应的页面
-                window.location.href = "team_introduction.html";
-                window.location.href = "contact.html";
-            }
+	<title>欢迎来到 Power Game</title>
 
-            function showTeamIntroduction() {
-                alert("我们是一个新成立的团队，谢谢支持");
-            }
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-            function showContact() {
-                alert("我们的联系方式是1234567");
-            }
-        </script>
-    </body>
+	<link rel="stylesheet" href="style.css">
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+
+<body>
+
+
+	<div id="site-content">
+		<header class="site-header">
+			<div class="container">
+				<a href="index.html" id="branding">
+					<img src="images/Role-playing_video_game_icon.svg" alt="" class="logo">
+					<div class="logo-copy">
+						<h1 class="site-title">Power Game</h1>
+						<small class="site-description">游戏销售平台</small>
+						<h1 class="highlight-title">冬季特卖中！</h1>
+					</div>
+				</a>
+
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item current-menu-item"><a href="index.html">Power 主页</a></li>
+						<li class="menu-item"><a href="about.html">关于我们</a></li>
+						<li class="menu-item"><a href="review.html">游戏测评</a></li>
+						<li class="menu-item"><a href="joinus.html">加入我们</a></li>
+					</ul>
+
+					<form action="#" class="search-form">
+						<input type="text" placeholder="Search...">
+						<button><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+
+				<div class="mobile-navigation"></div>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="container">
+				<div class="page">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="slider">
+								<ul class="slides">
+									<li><a href="single.html"><img src="dummy/slide-1.png" alt="Slide 1"></a></li>
+									<li><a href="single.html"><img src="dummy/slide-2.png" alt="Slide 2"></a></li>
+									<li><a href="single.html"><img src="dummy/slide-3.png" alt="Slide 3"></a></li>
+									<li><a href="single.html"><img src="dummy/slide-4.png" alt="Slide 4"></a></li>
+									<li><a href="single.html"><img src="dummy/slide-5.png" alt="Slide 5"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-sm-6 col-md-12">
+									<div class="latest-movie">
+										<a href="single.html"><img src="dummy/thumb-1.png" alt="Game 1"></a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<div class="latest-movie">
+										<a href="single.html"><img src="dummy/thumb-2.png" alt="Game 2"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="latest-movie">
+								<a href="single.html"><img src="dummy/thumb-3.png" alt="Game 3"></a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="latest-movie">
+								<a href="single.html"><img src="dummy/thumb-4.png" alt="Game 4"></a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="latest-movie">
+								<a href="single.html"><img src="dummy/thumb-5.png" alt="Game 5"></a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="latest-movie">
+								<a href="single.html"><img src="dummy/thumb-6.png" alt="Game 6"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<h2 class="section-title">今日爆款</h2>
+							<ul class="movie-schedule">
+								<li>
+									<div class="date">最近更新 2020/12/18</div>
+									<h2 class="entry-title"><a href="#">Counter-Strike</a></h2>
+								</li>
+								<li>
+									<div class="date">最近更新 2020/12/23</div>
+									<h2 class="entry-title"><a href="#">Cyberpunk 2077</a></h2>
+								</li>
+								<li>
+									<div class="date">最近更新 2020/12/25</div>
+									<h2 class="entry-title"><a href="#">Stardew Valley</a></h2>
+								</li>
+								<li>
+									<div class="date">最近更新 2020/9/10</div>
+									<h2 class="entry-title"><a href="#">The Forest</a></h2>
+								</li>
+								<li>
+									<div class="date">最近更新 2020/12/20</div>
+									<h2 class="entry-title"><a href="#">Wallpaper Engine</a></h2>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h2 class="section-title">新游尝鲜</h2>
+							<ul class="movie-schedule">
+								<li>
+									<div class="date">上线日期 2020/11/5</div>
+									<h2 class="entry-title"><a href="#">Apex Legends™</a></h2>
+								</li>
+								<li>
+									<div class="date">上线日期 2020/12/15</div>
+									<h2 class="entry-title"><a href="#">Rainbow Six® Siege</a></h2>
+								</li>
+								<li>
+									<div class="date">上线日期 2020/12/21</div>
+									<h2 class="entry-title"><a href="#">Rust</a></h2>
+								</li>
+								<li>
+									<div class="date">上线日期 2020/11/23</div>
+									<h2 class="entry-title"><a href="#">Football Manager 2021</a></h2>
+								</li>
+								<li>
+									<div class="date">上线日期 2020/12/17</div>
+									<h2 class="entry-title"><a href="#">Destiny 2</a></h2>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h2 class="section-title">史上最低</h2>
+							<ul class="movie-schedule">
+								<li>
+									<div class="date">史低价格<br>¥ 17</div>
+									<h2 class="entry-title"><a href="#">KING OF FIGHTERS XIII</a></h2>
+								</li>
+								<li>
+									<div class="date">史低价格<br>¥ 44</div>
+									<h2 class="entry-title"><a href="#">Street Fighter V</a></h2>
+								</li>
+								<li>
+									<div class="date">史低价格<br>¥ 33</div>
+									<h2 class="entry-title"><a href="#">Resident Evil 6</a></h2>
+								</li>
+								<li>
+									<div class="date">史低价格<br>¥ 89</div>
+									<h2 class="entry-title"><a href="#">Detroit: Become Human</a></h2>
+								</li>
+								<li>
+									<div class="date">史低价格<br>¥ 41</div>
+									<h2 class="entry-title"><a href="#">Far Cry Primal</a></h2>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">关于 Power Game</h3>
+							<p>Power Game作为数字内容发行渠道，为成千上万的创作者和出版商提供内容，并与他们的客户建立直接关系。Power社区让数百万玩家也能够这样做，分享娱乐和想法，结交朋友。
+							</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">帮助中心</h3>
+							<ul class="no-bullet">
+								<li><a href="#">隐私政策</a></li>
+								<li><a href="#">法律信息</a></li>
+								<li><a href="#">Power Game订户协议</a></li>
+								<li><a href="#">退款</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">近期热论</h3>
+							<ul class="no-bullet">
+								<li><a href="#">Devil May Cry5 发售DLC</a></li>
+								<li><a href="#">Human: Fall Flat 新地图</a></li>
+								<li><a href="#">Cities: Skylines 欢庆圣诞</a></li>
+								<li><a href="#">Wallpaper Engine 更新</a></li>
+								<li><a href="#">Skul 正式上线日期公布</a></li>
+								<li><a href="#">Minion Master 扩展包</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">加入我们</h3>
+							<ul class="no-bullet">
+								<li><a href="#">艺术</a></li>
+								<li><a href="#">音讯</a></li>
+								<li><a href="#">业务发展</a></li>
+								<li><a href="#">数据科学</a></li>
+								<li><a href="#">设备</a></li>
+								<li><a href="#">金融</a></li>
+								<li><a href="#">游戏设计</a></li>
+								<li><a href="#">产品设计</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">社交媒体</h3>
+							<ul class="no-bullet">
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Twitch</a></li>
+								<li><a href="#">Google+</a></li>
+								<li><a href="#">Weibo</a></li>
+								<li><a href="#">Tencent</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">订阅消息</h3>
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Email Address">
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="colophon">Copyright 2020 Power Game. 保留所有权利</div>
+			</div>
+
+		</footer>
+	</div>
+
+</body>
+
 </html>
