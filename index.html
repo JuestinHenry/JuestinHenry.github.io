@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>中央民族大学 - 可持续快时尚</title>
+        <style>
+            /* 添加一些基本的样式 */
+            body {
+                font-family: "Montserrat", sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                font-weight: 600;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+            }
+            nav a:hover {
+                background-color: #555;
+            }
+            .content {
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .fashion-designs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .fashion-designs img {
+                width: 300px;
+                height: 450px;
+                margin: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            .fashion-designs img:hover {
+                transform: translateY(-5px);
+            }
+            .join-us {
+                margin-top: 40px;
+                text-align: center;
+            }
+            .join-us a {
+                color: #333;
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+            }
+            .join-us a:hover {
+                background-color: #555;
+                color: #fff;
+            }
+        </style>
+        <link
+            href="https://fonts.cat.net/css?family=Noto+Sans+SC:400,600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="#">中央民族大学</a>
+                <a href="#">可持续快时尚</a>
+            </div>
+            <nav>
+                <a href="#">首页</a>
+                <a href="#" onclick="showIndustryNews()">业内资讯</a>
+                <a href="#" onclick="showJoinUs()">加入我们</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="fashion-designs">
+                <!-- 在这里添加各种衣服图案设计 -->
+                <img src="Images/design1.jpg" alt="Design 1" />
+                <img src="Images/design2.jpg" alt="Design 2" />
+                <img src="Images/design3.jpg" alt="Design 3" />
+                <!-- 添加更多的设计图 -->
+            </div>
+            <div class="join-us">
+                <a href="#" onclick="showTeamIntroduction()">团队介绍</a>
+                <a href="#" onclick="showContact()">联系方式</a>
+            </div>
+        </div>
+
+        <script>
+            function showIndustryNews() {
+                alert("用户体验\n用户设计");
+            }
+
+            function showJoinUs() {
+                alert("团队介绍\n联系方式");
+                // 跳转到相应的页面
+                window.location.href = "team_introduction.html";
+                window.location.href = "contact.html";
+            }
+
+            function showTeamIntroduction() {
+                alert("我们是一个新成立的团队，谢谢支持");
+            }
+
+            function showContact() {
+                alert("我们的联系方式是1234567");
+            }
+        </script>
+    </body>
+</html>
